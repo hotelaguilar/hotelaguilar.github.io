@@ -1,0 +1,4 @@
+html{
+    scroll-behavior:smooth;
+    scroll-padding-block-start: 50px;
+}

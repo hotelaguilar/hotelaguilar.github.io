@@ -1,0 +1,39 @@
+button:hover{
+    cursor: pointer;
+}
+
+.hover{
+    transition: background-color 300ms;
+}
+
+.hover:hover{
+    background-color: var(--hover-background);
+}
+
+.brown-box{
+    background-color: var(--brown-color);
+}
+
+.beige-box{
+    background-color: var(--beige-color);
+    color: var(--brown-color);
+}
+
+.golden-shadow{
+    filter: drop-shadow(var(--beige-color) -5px 5px);
+}
+
+.round-box{
+    border-radius: 10px;
+}
+
+.golden-border{
+    border: 1px solid var(--beige-color);
+}
+
+.gallery{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}

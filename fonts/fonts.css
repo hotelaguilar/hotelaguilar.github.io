@@ -1,0 +1,17 @@
+@font-face{
+	font-family: 'Clash Display';
+	src: url('clash-display/ClashDisplayExtralight.otf') format('opentype');
+	font-weight: 100;
+}
+
+@font-face{
+	font-family: 'Clash Display';
+	src: url('clash-display/ClashDisplayMedium.otf') format('opentype');
+	font-weight: 500;
+}
+
+@font-face{
+	font-family: 'Clash Display';
+	src: url('clash-display/ClashDisplayLight.otf') format('opentype');
+	font-weight: normal;
+}

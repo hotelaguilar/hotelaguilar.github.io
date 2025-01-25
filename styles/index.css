@@ -1,0 +1,441 @@
+:root{
+    --beige-color: #bea373;
+    --brown-color: rgb(57,45,32);
+    --hover-background: hsl(from var(--beige-color) h s 40%);
+}
+
+body{
+    background-color: #211f1d;
+    color: var(--beige-color);
+    font-size: 18px;
+    font-family: "Clash Display", "Times New Roman", sans-serif;
+    overflow-x: hidden;
+}
+
+h2,h3{
+    font-weight: 500;
+}
+
+h2{
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+
+section{
+    margin-block: 100px;
+}
+
+#main-nav{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    inset-block-start: 0;
+    inset-inline-start: 0;
+    inline-size: 100vw;
+    margin-block: 20px;
+    font-size: 0.9em;
+    color: white;
+    text-transform: uppercase;
+}
+
+#main-nav ul{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+
+    inline-size: 90vw;
+    block-size: 60px;
+
+    border-radius: 40px;
+
+    background-image: linear-gradient(
+                        to left,
+                        var(--brown-color) 0%,
+                        rgb(223,176,109) 25%,
+                        var(--brown-color) 50%,
+                        rgb(223,176,109) 75%,
+                        var(--brown-color) 100%
+                        );
+}
+
+#main-nav .nav-option{
+    transition: 300ms;
+}
+
+#main-nav .nav-option:hover{
+    color: black;
+}
+
+#main-nav .logo img{
+    block-size: 120px;
+}
+
+#hero #hotel-front img{
+    inline-size: 100vw;
+    max-height: 1000px;
+}
+
+#hero{
+    --content-inline-size: 60%;
+    inline-size: 100%;
+    text-align: center;
+}
+
+#hero #register{
+    display: flex;
+    flex-flow: row;
+
+    justify-content: flex-end;
+    align-items: center;
+
+    margin-inline: auto;
+    margin-block-start: -50px;
+    inline-size: 90vw;
+    block-size: 100px;
+
+    padding: 20px 50px;
+    box-sizing: border-box;
+}
+
+#hero #register button{
+    inline-size: 120px;
+    block-size: 40px;
+}
+
+#hero h1{
+    margin-block-start: 100px;
+    margin-block-end: 10px;
+
+    max-inline-size: 400px;
+    margin-inline: auto;
+
+    text-transform: uppercase;
+    font-size: 2.5em;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#hero p{
+    inline-size: var(--content-inline-size);
+    margin-inline: auto;
+    margin-block: 40px;
+}
+
+#hero h2{
+    margin-block-end: 40px;
+}
+
+#hero #features{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+
+    inline-size: var(--content-inline-size);
+    margin-inline: auto;
+}
+
+#hero #features .column{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    row-gap: 60px;
+    inline-size: 100%;
+
+    padding-inline: 20px;
+}
+
+#hero #features .column:nth-child(1){
+    border-inline-end: 1px solid var(--beige-color);
+}
+
+#hero #features .column:nth-child(2){
+    border-inline-start: 1px solid var(--beige-color);
+}
+
+#hero #features dt{
+    margin-block-end: 10px;
+    font-weight: 500;
+
+}
+
+#hero #location{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    row-gap: 30px;
+    column-gap: 20px;
+
+    box-sizing: border-box;
+
+    inline-size: var(--content-inline-size);
+    margin-inline: auto;
+    margin-block: 50px;
+    padding-inline: 20px;
+}
+
+#hero #location-text{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+    margin-inline: auto;
+}
+
+#hero #location-text address{
+    text-align: start;
+    font-weight: 100;
+}
+
+#hero #location-text address strong{
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+#hero #location-text img{
+    block-size: 80px;
+}
+
+#hero #location-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+
+    padding: 10px 30px;
+    margin-inline: auto;
+}
+
+#hero #location-link strong{
+    font-size: 1.4em;
+    max-inline-size: 200px;
+}
+
+#hero #location-link a{
+    display: block;
+    text-transform: uppercase;
+    padding: 10px 35px;
+}
+
+#turism{
+    --content-inline-size: 60%;
+    /* inline-size: var(--content-inline-size);
+    margin-inline: auto; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#turism h2{
+    text-transform: uppercase;
+    margin-block: 10px;
+}
+
+#turism #turism-pictures{
+    margin-block-start: 80px;
+    column-gap: 40px;
+    row-gap: 40px;
+}
+
+#turism-pictures .place-image{
+    position: relative;
+    overflow: hidden;
+
+    background-image: linear-gradient(
+                        50deg,
+                        var(--brown-color) 0%,
+                        rgb(from var(--brown-color) r g b / 0.9) 20%,
+                        rgba(0,0,0,0.0) 70%
+                     );
+}
+
+#turism-pictures .place-image img{
+    position: relative;
+    inline-size: 280px;
+    block-size: 320px;
+    display: block;
+    z-index: -1;
+}
+
+#turism-pictures .place-image figcaption{
+    position: absolute;
+    inset-inline-start: 20px;
+    inset-block-end: 20px;
+    text-align: start;
+}
+
+#promotions{
+    display: flex;
+    justify-content: center;
+}
+
+#promotions .place-image{
+    --content-inline-size: 60vw;
+    display: flex;
+    flex-flow: row-reverse;
+    justify-items: center;
+    align-items: center;
+
+    position: relative;
+    max-inline-size: var(--content-inline-size);
+}
+
+#promotions img{
+    max-inline-size: var(--content-inline-size);
+}
+
+#promotions .description-box{
+    max-inline-size: 300px;
+    max-block-size: 100%;
+
+    position: absolute;
+    inset-inline-end: 0;
+
+    margin: 30px;
+    padding: 20px 30px;
+}
+
+#promotions .description-box h2{
+    text-transform: uppercase;
+    margin-block-end: 10px;
+}
+
+#promotions .description-box p{
+    margin-block-end: 10px;
+}
+
+#promotions .description-box li{
+    list-style: disc inside;
+    padding-inline-start: 10px;
+}
+
+#promotions .description-box .price-text{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    margin-block-start: 10px;
+}
+
+#promotions .description-box .price-text strong{
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 1.1em;
+}
+
+#promotions .description-box .price-text b{
+    padding: 10px;
+    font-weight: 500;
+}
+
+#suites{
+    text-align: center;
+}
+
+#suites #suites-pictures{
+    row-gap: 20px;
+    column-gap: 20px;
+}
+
+#suites .suite-picture{
+    --content-inline-size: 300px;
+    padding: 20px;
+}
+
+#suites .suite-picture img{
+    inline-size: var(--content-inline-size);
+    block-size: 225px;
+}
+
+#suites .suite-picture h3{
+    text-transform: uppercase;
+    margin-block: 10px;
+}
+
+#suites .suite-picture p{
+    max-inline-size: var(--content-inline-size);
+    block-size: 120px;
+}
+
+#suites #suites-pictures+p{
+    margin-block-start: 50px;
+}
+
+#reservation{
+    --content-inline-size: 60vw;
+    --min-content-inline-size: 300px;
+
+    inline-size: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#reservation form{
+    inline-size: var(--content-inline-size);
+    min-inline-size: var(--min-content-inline-size);
+
+    padding: 20px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+#reservation h3{
+    text-align: center;
+    font-size: 1.2em;
+}
+
+#reservation fieldset{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+
+    row-gap: 30px;
+    column-gap: 30px;
+    margin-block: 20px;
+}
+
+#reservation .column{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+
+    row-gap: 20px;
+}
+
+#reservation .identifier{
+    display: flex;
+    flex-flow: column nowrap;
+    row-gap: 5px;
+
+    text-transform: uppercase;
+}
+
+#reservation .text-box input{
+    border: 1px solid var(--beige-color);
+    border-radius: 5px;
+    min-inline-size: var(--min-content-inline-size);
+    block-size: 20px;
+
+    background-color: transparent;
+    color: var(--beige-color);
+}
+
+#reservation #payment-option li{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 0.7em;
+    column-gap: 20px;
+}
+
+#reservation #send-data-button{
+    text-transform: uppercase;
+    padding: 10px 20px;
+    margin-block: 20px;
+    font-weight: 500;
+}
