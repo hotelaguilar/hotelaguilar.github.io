@@ -1,0 +1,36 @@
+@media (width <= 650px) {
+    #main-nav{
+        font-size: 0.6em;
+    }
+
+    #main-nav ul{
+        display: grid !important;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        justify-items: center;
+        justify-content: center;
+        align-content: center;
+    }
+    #main-nav .logo{
+        order: -1;
+        grid-row: 1 / 4;
+    }
+
+    #hero #features{
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    #hero #features .column{
+        border: none !important;
+        gap: 40px;
+    }
+
+    #promotions .place-image{
+        flex-wrap: wrap;
+    }
+
+    #promotions .description-box{
+        position: static;
+    }
+}
