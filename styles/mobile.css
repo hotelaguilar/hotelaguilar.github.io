@@ -47,4 +47,8 @@
     #hero #register{
         margin-block-start: 10px;
     }
+
+    #hero #location{
+        justify-content: center;
+    }
 }

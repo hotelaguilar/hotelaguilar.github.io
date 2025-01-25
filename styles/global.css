@@ -37,3 +37,7 @@ button:hover{
     justify-content: center;
     align-items: center;
 }
+
+section{
+    margin-inline: 10px;
+}
