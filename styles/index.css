@@ -40,6 +40,7 @@ section{
 }
 
 #main-nav ul{
+    --light-brown-color: rgb(223,176,109);
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
@@ -54,9 +55,9 @@ section{
     background-image: linear-gradient(
                         to left,
                         var(--brown-color) 0%,
-                        rgb(223,176,109) 25%,
+                        var(--light-brown-color) 25%,
                         var(--brown-color) 50%,
-                        rgb(223,176,109) 75%,
+                        var(--light-brown-color) 75%,
                         var(--brown-color) 100%
                         );
 }
