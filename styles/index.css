@@ -284,6 +284,7 @@ section{
 
     position: relative;
     max-inline-size: var(--content-inline-size);
+    min-inline-size: 400px;
 }
 
 #promotions .place-image img{
