@@ -366,7 +366,8 @@ section{
 
 #suites .suite-picture p{
     max-inline-size: var(--content-inline-size);
-    block-size: 120px;
+    block-size: auto;
+    margin-block-end: 10px;
 }
 
 #suites #suites-pictures+p{
