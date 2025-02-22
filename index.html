@@ -33,7 +33,7 @@
             </figure>
 
             <div id="register" class="brown-box golden-shadow">
-                <button class="hover beige-box round-box button" type="button"></button>
+                <a class="hover beige-box round-box" href="#reservation">reserva ahora</a>
             </div>
 
             <h1>bienvenido a hotel aguilar</h1>
@@ -163,6 +163,12 @@
 
                         <label class="text-box identifier" for="email">correo electr&oacute;nico
                         <input type="email" name="email" id="email"></label>
+                        
+                        <label class="text-box identifier" for="guest-quantity">n&uacute;mero de hu&eacute;spedes
+                        <input type="number" value="1" name="guest-quantity" id="guest-quantity"></label>
+                        
+                        <label class="text-box identifier" for="suite-type">tipo de habitaci&oacute;n
+                        <input type="text" name="suite-type" id="suite-type"></label>
 
                         <label id="payment-option" class="identifier">m&eacute;todo de pago
                             <ul>
@@ -179,6 +185,7 @@
                                   <input type="radio" id="credit-card" name="payment-option" value="credit-Card"/>
                                 </li>
                             </ul>
+                        </label>
                     </div>
 
                     <div class="column">
