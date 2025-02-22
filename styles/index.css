@@ -101,9 +101,10 @@ section{
     box-sizing: border-box;
 }
 
-#hero #register button{
-    inline-size: 120px;
-    block-size: 40px;
+#hero #register a{
+    display: block;
+    padding: 10px 20px;
+    text-transform: uppercase;
 }
 
 #hero h1{
